@@ -13,6 +13,6 @@ public class Buntstift extends Stift{
 
     @Override
     public boolean istNutzbar() {
-        return !kaputt & restlaenge > 10;
+        return super.istNutzbar() && restlaenge > 10;
     }
 }

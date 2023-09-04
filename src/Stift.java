@@ -8,5 +8,7 @@ public abstract class Stift {
 
     public abstract void gibSchreibfarbeAus();
 
-    public abstract boolean istNutzbar();
+    public boolean istNutzbar() {
+        return !kaputt;
+    };
 }

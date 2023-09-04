@@ -13,6 +13,6 @@ public class Kugelschreiber extends Stift{
 
     @Override
     public boolean istNutzbar() {
-        return !kaputt & fuellstandmine > 0;
+        return super.istNutzbar() && fuellstandmine > 0;
     }
 }
